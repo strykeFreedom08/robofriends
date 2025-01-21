@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://strykefreedom08.github.io/robofriends",
+  "homepage": "https://strykefreedom08.github.io/robofriends",
   "name": "robofriendspwa",
   "version": "0.1.0",
   "private": true,
@@ -35,8 +35,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "precommit": "git-format-staged --formatter 'prettier --stdin' '*.js'"
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +58,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "gh-pages": "^6.2.0",
+    "git-format-staged": "^3.1.1",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2"
   }
 }

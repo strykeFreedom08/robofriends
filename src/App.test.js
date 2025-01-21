@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Card from './components/Card';
 
-test('renders learn react link', () => {
+test('Card component test', () => {
   render(<Card />);
   const imageElement = screen.getByRole('img');
   
